@@ -94,6 +94,15 @@ h1+p {
     background: var(--brand-dark);
     color: #fff;
     padding: 12px 24px;
+    /* sticky: stays at the top while the page scrolls */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .brand {
@@ -108,6 +117,10 @@ h1+p {
     list-style: none;
     margin: 12px 0 0;
     padding: 0;
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    list-style: none;
 }
 
 .nav-list li {
@@ -137,6 +150,11 @@ h1+p {
     background: var(--brand-dark);
     color: #fff;
     padding: 20px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 24px;
 }
 
 .site-footer p {
@@ -343,13 +361,6 @@ input[placeholder]:not(:placeholder-shown):invalid {
 
 /* ---------- 10. Positioning ---------- */
 
-/* sticky: stays at the top while the page scrolls */
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
 /* absolute: placed inside its nearest positioned parent */
 .menu-item {
     position: relative;
@@ -408,32 +419,10 @@ input[placeholder]:not(:placeholder-shown):invalid {
 }
 
 /* ---------- 11. Flexbox: header, nav, footer ---------- */
-.site-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-}
-
 .brand {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.nav-list {
-    display: flex;
-    gap: 8px;
-    margin: 0;
-}
-
-.site-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px 24px;
 }
 
 /* ---------- 12. Flexbox: cards and menu ---------- */

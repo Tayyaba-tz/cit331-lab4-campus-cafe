@@ -12,3 +12,18 @@
  
 ## Why is this address http and not https?
 The address is http because the traffic never leaves your local computer. The attacker can't intercept in the traffic through any network transit.
+
+## Selectors I used
+| Selector kind | Example from my CSS |
+|---------------|---------------------|
+| Element | body |
+| Class | .card |
+| ID | #main |
+| Grouping (comma) | h1, h2, h3 |
+| Descendant (space) | .nav-list a |
+| Child (>) | form>fieldset |
+| Adjacent sibling (+)  | h1+p |
+| Compound (no space, such as a.active)  | .nav-list a.active (the a.active part) |
+| Attribute	| a[href^="http"] |
+| Pseudo-class | a:hover |
+| Pseudo-element | .menu-group h2::before |

@@ -27,3 +27,18 @@ The address is http because the traffic never leaves your local computer. The at
 | Attribute	| a[href^="http"] |
 | Pseudo-class | a:hover |
 | Pseudo-element | .menu-group h2::before |
+
+## Bug log (Lab 4, Task 6)
+ 
+| # | What was wrong (file and line) | Which tool showed it | My fix |
+|---|--------------------------------|----------------------|--------|
+| 1 | At line 8 of bugs.html: href="style.css" | Network tab | href="bugs.css" |
+| 2 | At line 14 of bugs.css:  linecolour: #ffffff; | Styles pane | linecolor: #ffffff;  |
+| 3 | At line 19 of bugs.html: <h4>Today's special</h4> | Accessibility tree | <h2>Today's special<h2> |
+| 4 | At line 23 of bugs.html: <label for="mail"> | LightHouse | <label for="email"> |
+| 5 | At line 20 of bugs.html, the image element doesn't have the alt | W3C validator | <img src="../images/logo.svg" alt="" width="80" height="80"> |
+| 6 | At line 2 of bugs.html: <html> | W3C validator | <html lang="en"> |
+| 7 | At line 21 of bugs.css, there was no semicolon between two attributes | Saw the Red Signal in VS code | Added semicolon between them |
+| 8 | At line 24 of bugs.html, there was no autocomplete in email | Issues tab | Added autocomplete="off" |
+| 9 | At line 25 of bugs.css, there was misspelled class name | Fixed  by just reviewing the css | .notes -> .note |
+| 10 | At line 12 of bugs.html: <div class="menu"> | Accessibility tree | <nav class="menu"> |
